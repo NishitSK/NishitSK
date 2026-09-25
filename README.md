@@ -25,7 +25,7 @@ It puts each workload on the cleanest electricity grid that still meets its late
 It cuts carbon intensity **94.7%** against a carbon-blind baseline. That's the least interesting thing about it:
 
 - A held-out statistical decomposition shows **97% of the saving comes from picking the right region once**, not from reacting hour to hour.
-- Across **25,000+ verified forecasts**, the model with the *lower* error made the *worse* decisions — it promised +12.7% and delivered −3.8%.
+- Across **25,000+ verified forecasts**, the model with the *lower* error made the *worse* decisions — it delivered net-negative savings on the delays it recommended.
 - So every forecast now has to earn the right to delay work:
 
 ```mermaid
