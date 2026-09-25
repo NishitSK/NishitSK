@@ -1,56 +1,92 @@
-# Nishit S K
+<div align="center">
 
-**Backend · Cloud · Data**, and frontend that has to rank — final-year CSE at Sahyadri College of Engineering, Mangaluru.
-I build systems that run unattended, then measure them honestly enough to find out where they're wrong.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0E15,50:141c2b,100:5EE6C8&height=190&section=header&text=Nishit%20S%20K&fontSize=46&fontColor=E7ECF2&fontAlignY=36&desc=Backend%20%C2%B7%20Cloud%20%C2%B7%20Data%20%C2%B7%20and%20frontend%20that%20has%20to%20rank&descAlignY=58&descSize=15&descColor=8693A3&animation=fadeIn" width="100%" alt="Nishit S K" />
 
-[nishit.app](https://nishit.app) · [LinkedIn](https://www.linkedin.com/in/nishit-s-k) · nishitsk42@gmail.com
+<a href="https://nishit.app">
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=19&pause=1400&color=5EE6C8&center=true&vCenter=true&width=720&lines=I+build+systems+that+run+unattended.;Then+I+measure+them+until+they+admit+where+they're+wrong.;25%2C000%2B+forecasts+checked+against+reality.;One+of+my+own+models+got+fired+by+its+own+guard." alt="typing intro" />
+</a>
+
+[![nishit.app](https://img.shields.io/badge/nishit.app-0A0E15?style=for-the-badge&logo=googlechrome&logoColor=5EE6C8)](https://nishit.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0E15?style=for-the-badge&logo=linkedin&logoColor=5EE6C8)](https://www.linkedin.com/in/nishit-s-k)
+[![Email](https://img.shields.io/badge/nishitsk42@gmail.com-0A0E15?style=for-the-badge&logo=gmail&logoColor=5EE6C8)](mailto:nishitsk42@gmail.com)
+
+</div>
 
 ---
 
 ## The thing I'd want you to read
 
-**[CADSS — a carbon-aware cloud scheduler](https://github.com/NishitSK/CARBONMAJOR)**, running live on 13 AWS regions.
+**[CADSS — a carbon-aware cloud scheduler](https://github.com/NishitSK/CARBONMAJOR)**, run live on 13 AWS regions.
 
-It places workloads on the cleanest electricity grid that still satisfies their latency SLA and data-residency law. Three scheduling policies run side by side, hourly, dispatching real jobs through AWS Systems Manager.
+It puts each workload on the cleanest electricity grid that still meets its latency SLA and data-residency law. Three scheduling policies ran side by side, hourly, dispatching real jobs through AWS Systems Manager.
 
-The scheduler cuts carbon intensity **94.7%** against a carbon-blind baseline. That number is also the least interesting thing about it:
+It cuts carbon intensity **94.7%** against a carbon-blind baseline. That's the least interesting thing about it:
 
-- A held-out statistical decomposition (AR(1)-corrected, *p* < 10⁻¹⁰) shows **97% of the saving comes from picking the right region once** — not from reacting hour to hour. Most work in this area reports the big number and skips the split.
-- I verified **25,000+ forecasts** against measured grid data. The model with the *lower* error made the *worse* decisions: it promised +12.7% savings and delivered −3.8%.
-- So the system gates every forecast on its own verified record, and it disabled one of my two models. Later it withdrew a horizon from the other. A guard worth having has to be able to say no to you.
+- A held-out statistical decomposition shows **97% of the saving comes from picking the right region once**, not from reacting hour to hour.
+- Across **25,000+ verified forecasts**, the model with the *lower* error made the *worse* decisions — it promised +12.7% and delivered −3.8%.
+- So every forecast now has to earn the right to delay work:
 
-Paper accepted for presentation at an IEEE conference, October 2026.
+```mermaid
+flowchart LR
+    F["Model says:<br/>wait 4h, save 18%"] --> G{"Has this model<br/>earned an 18% promise<br/>on verified outcomes?"}
+    G -- yes --> W["Delay the job"]
+    G -- no --> R["Run now"]
+    W --> V["Hour arrives:<br/>check what really happened"]
+    R --> V
+    V -. updates the record .-> G
+```
+
+That loop disabled one of my two models, and later withdrew a horizon from the other. A guard worth having has to be able to say no to you.
+
+📄 Paper accepted for presentation at an IEEE conference, October 2026.
 
 ---
 
 ## Shipped during my internship
 
-**[squish.urudha.com](https://squish.urudha.com)** — free browser-based image tools (WebP conversion, compression, background removal, PDFs, watermarks, EXIF). Everything runs client-side; nothing is uploaded.
+**[squish.urudha.com](https://squish.urudha.com)** — free in-browser image tools: WebP conversion, compression, background removal, PDFs, watermarks, EXIF. Built at **Urudha** (May–Jul 2026) in Next.js and React, and I owned how it gets found.
 
-Built at **Urudha** (May–Jul 2026) in Next.js and React, where I also owned the search side of it:
+<details>
+<summary><b>What "owned the search side" means</b></summary>
+<br/>
 
-- **Programmatic landing pages** for the queries people actually type — `jpg-to-webp`, `heic-to-webp`, `compress-image`, `batch-image-converter` — each with its own title, description and single H1 rather than one page pretending to be many.
-- **Structured data**: FAQPage schema on the tool pages, plus WebSite, Organization and ItemList JSON-LD.
-- **Crawl hygiene**: server-rendered routes, canonicals, Open Graph and Twitter cards, robots.txt and a 15-URL sitemap.
-- **Core Web Vitals**: image optimisation, lazy loading and bundle-size reduction.
+- **Programmatic landing pages** for the queries people actually type — `jpg-to-webp`, `heic-to-webp`, `compress-image`, `batch-image-converter` — each with its own title, description and single H1.
+- **Structured data**: FAQPage schema on tool pages, plus WebSite, Organization and ItemList JSON-LD.
+- **Crawl hygiene**: server-rendered routes, canonicals, Open Graph and Twitter cards, robots.txt and a sitemap.
+- **Core Web Vitals**: image optimisation, lazy loading, bundle-size cuts.
+
+View source on any tool page — it's all there.
+
+</details>
 
 ---
 
-## Other work
+## Other things I've built
 
 | | | |
 |---|---|---|
-| **[Medallion Data Lake](https://github.com/NishitSK/airflow-spark-medallion-pipeline)** | Raw → Bronze → Silver → Gold ETL platform with validation and retries at each layer | Spark · Airflow · S3 · EC2 · Docker |
-| **[EventSphere](https://github.com/NishitSK/EventSphere)** | Campus event platform, containerised and auto-deployed on every push to main | MERN · Docker · Nginx · GitHub Actions · EC2 |
-| **[LearnPath-AI](https://github.com/NishitSK/LearnPath-AI)** | Personalised skill-gap analyser | JavaScript · LLM APIs |
-| **[Pantry Guardian](https://github.com/NishitSK/PANTRY-GUARDIAN)** | Kitchen inventory with OCR receipt scanning and expiry prediction | Next.js · FastAPI · MongoDB · Gemini · Tesseract |
+| 🌊 **[Medallion Data Lake](https://github.com/NishitSK/airflow-spark-medallion-pipeline)** | Raw → Bronze → Silver → Gold ETL, validated and retried at each layer | Spark · Airflow · S3 · EC2 · Docker |
+| 🎟️ **[EventSphere](https://github.com/NishitSK/EventSphere)** | Campus event platform, auto-deployed on every push to main | MERN · Docker · Nginx · GitHub Actions · EC2 |
+| 🤟 **[ISL Detection](https://github.com/NishitSK/HANDSIGNDETECTION)** | Real-time Indian Sign Language translation with speech output | Python · computer vision |
+| 🧭 **[LearnPath-AI](https://github.com/NishitSK/LearnPath-AI)** | Personalised skill-gap analyser | JavaScript · LLM APIs |
+| 🥫 **[Pantry Guardian](https://github.com/NishitSK/PANTRY-GUARDIAN)** | OCR receipt scanning and expiry prediction | Next.js · FastAPI · MongoDB · Gemini |
 
 ---
 
 ## Tools I reach for
 
-**Python** · FastAPI · PyTorch · statsmodels · pandas · Spark · Airflow
-**TypeScript / JavaScript** · React · Next.js · Node · Vite
-**Search** technical SEO · structured data · Core Web Vitals
-**AWS** EC2 · S3 · Systems Manager · CloudWatch · IAM · boto3
-**Also** Docker · Nginx · GitHub Actions · MongoDB · MySQL · Git · Linux
+<div align="center">
+
+[![Skills](https://skillicons.dev/icons?i=python,fastapi,pytorch,ts,js,react,nextjs,nodejs,tailwind,aws,docker,nginx,githubactions,mongodb,mysql,linux,git&perline=9)](https://skillicons.dev)
+
+<sub>plus statsmodels · pandas · Spark · Airflow · boto3 · technical SEO · structured data</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5EE6C8,50:141c2b,100:0A0E15&height=110&section=footer" width="100%" alt="" />
+
+</div>
