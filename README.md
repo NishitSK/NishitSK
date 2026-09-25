@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0E15,50:141c2b,100:5EE6C8&height=190&section=header&text=Nishit%20S%20K&fontSize=46&fontColor=E7ECF2&fontAlignY=36&desc=Backend%20%C2%B7%20Cloud%20%C2%B7%20Data%20%C2%B7%20and%20frontend%20that%20has%20to%20rank&descAlignY=58&descSize=15&descColor=8693A3&animation=fadeIn" width="100%" alt="Nishit S K" />
+# Nishit S K
+
+**Backend · Cloud · Data** — and frontend that has to rank. Final-year CSE, Sahyadri College of Engineering, Mangaluru.
 
 <a href="https://nishit.app">
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=19&pause=1400&color=5EE6C8&center=true&vCenter=true&width=720&lines=I+build+systems+that+run+unattended.;Then+I+measure+them+until+they+admit+where+they're+wrong.;25%2C000%2B+forecasts+checked+against+reality.;One+of+my+own+models+got+fired+by+its+own+guard." alt="typing intro" />
@@ -38,7 +40,7 @@ flowchart LR
 
 That loop disabled one of my two models, and later withdrew a horizon from the other. A guard worth having has to be able to say no to you.
 
-📄 Paper accepted for presentation at an IEEE conference, October 2026.
+Paper accepted for presentation at an IEEE conference, October 2026.
 
 ---
 
@@ -65,11 +67,11 @@ View source on any tool page — it's all there.
 
 | | | |
 |---|---|---|
-| 🌊 **[Medallion Data Lake](https://github.com/NishitSK/airflow-spark-medallion-pipeline)** | Raw → Bronze → Silver → Gold ETL, validated and retried at each layer | Spark · Airflow · S3 · EC2 · Docker |
-| 🎟️ **[EventSphere](https://github.com/NishitSK/EventSphere)** | Campus event platform, auto-deployed on every push to main | MERN · Docker · Nginx · GitHub Actions · EC2 |
-| 🤟 **[ISL Detection](https://github.com/NishitSK/HANDSIGNDETECTION)** | Real-time Indian Sign Language translation with speech output | Python · computer vision |
-| 🧭 **[LearnPath-AI](https://github.com/NishitSK/LearnPath-AI)** | Personalised skill-gap analyser | JavaScript · LLM APIs |
-| 🥫 **[Pantry Guardian](https://github.com/NishitSK/PANTRY-GUARDIAN)** | OCR receipt scanning and expiry prediction | Next.js · FastAPI · MongoDB · Gemini |
+| **[Medallion Data Lake](https://github.com/NishitSK/airflow-spark-medallion-pipeline)** | Raw → Bronze → Silver → Gold ETL, validated and retried at each layer | Spark · Airflow · S3 · EC2 · Docker |
+| **[EventSphere](https://github.com/NishitSK/EventSphere)** | Campus event platform, auto-deployed on every push to main | MERN · Docker · Nginx · GitHub Actions · EC2 |
+| **[ISL Detection](https://github.com/NishitSK/HANDSIGNDETECTION)** | Real-time Indian Sign Language translation with speech output | Python · computer vision |
+| **[LearnPath-AI](https://github.com/NishitSK/LearnPath-AI)** | Personalised skill-gap analyser | JavaScript · LLM APIs |
+| **[Pantry Guardian](https://github.com/NishitSK/PANTRY-GUARDIAN)** | OCR receipt scanning and expiry prediction | Next.js · FastAPI · MongoDB · Gemini |
 
 ---
 
@@ -93,6 +95,5 @@ View source on any tool page — it's all there.
   <img alt="contribution snake" src="https://raw.githubusercontent.com/NishitSK/NishitSK/output/github-snake.svg" />
 </picture>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5EE6C8,50:141c2b,100:0A0E15&height=110&section=footer" width="100%" alt="" />
 
 </div>
