@@ -87,6 +87,12 @@ View source on any tool page — it's all there.
 
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NishitSK/NishitSK/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NishitSK/NishitSK/output/github-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/NishitSK/NishitSK/output/github-snake.svg" />
+</picture>
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:5EE6C8,50:141c2b,100:0A0E15&height=110&section=footer" width="100%" alt="" />
 
 </div>
