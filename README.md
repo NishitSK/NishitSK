@@ -38,7 +38,7 @@ flowchart LR
     V -. updates the record .-> G
 ```
 
-That loop disabled one of my two models, and later withdrew a horizon from the other. A guard worth having has to be able to say no to you.
+That loop disabled one of my two models, and later flagged one of the other's horizons as untrustworthy too. A guard worth having has to be able to say no to you.
 
 Paper accepted for presentation at an IEEE conference, October 2026.
 
